@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yukthi S | Portfolio</title>
+
+<style>
+/* ===== RESET =====      reset ensures consistent styling across all browsers*/  
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;                                     
+font-family: Arial, sans-serif;
+}
+
+html, body {
+width: 100%;
+overflow-x: hidden;
+}
+
+body {
+background: #ffffff;
+color: #0f172a;
+line-height: 1.7;
+}
+
+/* ===== HEADER =====        dark gradient header and centers content */
+header {
+background: linear-gradient(135deg, #0f172a, #020617);
+color: white;
+text-align: center;
+padding: 3rem 1rem;
+}
+
+header img {
+width: 135px;
+height: 135px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid #38bdf8;
+margin: 0 auto 1.2rem;
+display: block;
+background: white;
+}
+
+header h1 {
+font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+header p {
+color: #38bdf8;
+margin-top: 0.3rem;
+font-weight: bold;
+}
+
+/* ===== NAV =====   adds a light navigation bar with shadow  , uses flexbox to align menu items horizontally*/
+nav {
+background: #f1f5f9;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1.2rem;
+padding: 1rem;
+}
+
+nav a {
+text-decoration: none;
+color: #0f172a;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #38bdf8;
+}
+
+/* ===== MAIN =====    keeps content centered and readable on large screens*/
+main {
+max-width: 1100px;
+margin: auto;
+padding: 3rem 1rem;
+}
+
+section {
+margin-bottom: 4rem;
+}
+
+h2 {
+border-left: 5px solid #38bdf8;
+padding-left: 0.8rem;
+margin-bottom: 1.5rem;
+font-size: 1.6rem;
+}
+
+/* ===== GRID =====    uses grid to create responsive cards that adjust automatically based on screen size*/
+.skills,
+.projects {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 1.6rem;
+}
+
+/* ===== CARD =====       create card-like boxes */
+.box {
+background: #f8fafc;
+padding: 1.5rem;
+border-radius: 14px;
+box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+min-width: 0;
+word-break: break-word;
+}
+
+.box strong {
+font-size: 1.05rem;
+}
+
+/* ===== PROJECT LIST ===== */
+.box ul {
+margin-top: 0.8rem;
+padding-left: 1.1rem;
+}
+
+.box ul li {
+margin-bottom: 0.5rem;
+}
+
+/* ===== LINKS ===== */
+a {
+color: #0f172a;
+}
+
+a:hover {
+color: #38bdf8;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+display: inline-block;
+margin-top: 1.2rem;
+padding: 0.65rem 1.6rem;
+background: #0f172a;
+color: white;
+border-radius: 24px;
+text-decoration: none;
+font-size: 0.95rem;
+}
+
+.btn:hover {
+background: #38bdf8;
+color: #0f172a;
+}
+
+/* ===== FOOTER ===== */
+footer {
+background: #0f172a;
+color: white;
+text-align: center;
+padding: 1.2rem;
+font-size: 0.9rem;
+}
+
+/* ===== SMALL DEVICES =====       media query for small devices to maintain layout*/
+@media (max-width: 360px) {
+.skills,
+.projects {
+grid-template-columns: 1fr 1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="profile.jpg" alt="Yukthi S">
+<h1>Yukthi S</h1>
+<p>TTT INTERN</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+Computer Science Engineering student working as a Tax Technology
+Transformation Intern at EY GDS. The role gives practical experience in applying
+technology to business processes.
+Passionate about problem-solving and continuous learning.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="box"><strong>Languages</strong><br>C, Java, Python</div>
+<div class="box"><strong>Tools</strong><br>GitHub, VS Code</div>
+<div class="box"><strong>Concepts</strong><br>DSA, Machine Learning, Data Visualization</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+
+<div class="box">
+<strong>Cineo AI – Advanced Movie Generation</strong>
+<p><em>Python, PyTorch, Stable Diffusion, Streamlit</em></p>
+<ul>
+<li>Developed a web app to generate cinematic videos from text prompts.</li>
+<li>Used AI-based generative models for video creation.</li>
+<li>Applications include virtual filmmaking, marketing, and education.</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>Human Activity Recognition (HAR)</strong>
+<p><em>Python, OpenCV, TensorFlow/Keras, CNN, LSTM</em></p>
+<ul>
+<li>Developed a real-time HAR system to detect actions like walking, sitting, and running.</li>
+<li>Built a CNN + LSTM model achieving 75% accuracy.</li>
+<li>Applicable in surveillance, healthcare, and smart monitoring systems.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<p>Email:
+<a href="mailto:yukthi.s2022@gmail.com">yukthi.s2022@gmail.com</a>
+</p>
+
+<p>LinkedIn:
+<a href="https://www.linkedin.com/in/yukthi-s" target="_blank">
+linkedin.com/in/yukthi-s
+</a>
+</p>
+
+<p>GitHub:
+<a href="https://github.com/Yukthi1901" target="_blank">
+github.com/Yukthi1901
+</a>
+</p>
+
+<a href="Yukthi_S_Resume.pdf" class="btn" download>
+Download Resume
+</a>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Yukthi S</p>
+</footer>
+
+</body>
+</html>
